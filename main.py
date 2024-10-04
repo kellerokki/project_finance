@@ -12,3 +12,6 @@ class CSV:
         except FileNotFoundError:
             df = pd.DataFrame(columns=["date", "amount", "category", "description"]) #If file not found, create one with given list.""
             #Data Frame in Pandas is an object, that allows easy access to rows and columns from something.
+            df.to_csv(cls.CSV_file, index=False) #Converts given data above into a csv file.
+
+CSV.initialize_csv()
