@@ -11,3 +11,4 @@ class CSV:
             pd.read_csv(cls.CSV_file) #Trying to read closed CSV_file
         except FileNotFoundError:
             df = pd.DataFrame(columns=["date", "amount", "category", "description"]) #If file not found, create one with given list.""
+            #Data Frame in Pandas is an object, that allows easy access to rows and columns from something.
